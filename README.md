@@ -4,8 +4,13 @@ Breunig MM, Kriegel H-P, Ng RT, Sander J. LOF: Identifying Density-Based Local O
 
 
 * Usage example:
-	 pcl::LOFFilter<PointType> sorfilter (true); // Initializing with true will allow us to extract the removed indices
-	 sorfilter.setInputCloud (cloud_in);
-	 sorfilter.setK (20);
-	 sorfilter.setThresh (1.0);
-	 sorfilter.filter (*cloud_out);
+
+pcl::LOFFilter<PointType> sorfilter (true); // Initializing with true will allow us to extract the removed indices
+
+sorfilter.setInputCloud (cloud_in);
+
+sorfilter.setK (20);
+
+sorfilter.setThresh (1.0);
+
+sorfilter.filter (*cloud_out);
